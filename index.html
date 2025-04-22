@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arkam Sunesara Portfolio</title>
+  <h1 class="sliding-name"><span>Welcome to my Portfolio Website</span></h1>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <!-- AOS Animation CSS -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("nav");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out',
+    disable: function () {
+      return window.innerWidth < 768; // disable on small screens
+    }
+  });
+</script>
+
+
+<body>
+  <!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out',
+  });
+</script>
+
+  <!-- Top Navigation Buttons -->
+<nav class="top-nav">
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#languages">Languages</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+    <li><a href="data-analysis.html">Data Analysis Projects</a></li>
+  </ul>
+</nav>
+
+ <!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-img">
+        <img src="profile.jpg" alt="Arkam Sunesara">
+      </div>
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Arkam Sunesara</span></h1>
+        <p>Third-Year B Tech IT Student | Passionate about Data Analytics, Design & Development</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- About Me -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>As a third-year B.Tech Information Technology student at Shah and Anchor Kutchhi Engineering College, I actively participate in various technical events and have gained valuable experience and knowledge.</p>
+  </section>
+
+  <!-- Education Section -->
+<section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <h3>Shah And Anchor Kutchhi Engineering College</h3>
+      <p><strong>Bachelor of Engineering (BE), Information Technology</strong></p>
+      <p class="edu-date">Nov 2022 – Jul 2026</p>
+    </div>
+  
+    <div class="edu-card">
+      <h3>Hansraj Morarji Public School</h3>
+      <p><strong>Higher Secondary Certificate (HSC), Science</strong></p>
+      <p class="edu-date">Jun 2020 – Mar 2022</p>
+    </div>
+  </section>
+  
+
+  <!-- Skills -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="images/excel.png" alt="Excel">
+        <p>Microsoft Excel</p>
+      </div>
+      <div class="skill">
+        <img src="images/powerbi.png" alt="Power BI">
+        <p>Microsoft Power BI</p>
+      </div>
+      <div class="skill">
+        <img src="images/python.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <img src="images/sql.png" alt="sql">
+        <p>SQL</p>
+      </div>
+      <div class="skill">
+        <img src="images/html.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="images/css.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="images/data-cleaning.png" alt="Data Cleaning">
+        <p>Data Cleaning</p>
+      </div>
+      <div class="skill">
+        <img src="images/data-analysis.png" alt="Data Analysis">
+        <p>Data Analysis</p>
+      </div>
+      <div class="skill">
+        <img src="images/powerpoint.png" alt="powerpoint">
+        <p>Microsoft powerpoint</p>
+      </div>
+      <div class="skill">
+        <img src="images/office.png" alt="Office">
+        <p>Microsoft Office</p>
+      </div>
+      <div class="skill">
+        <img src="images/word.png" alt="word">
+        <p>Microsoft Word</p>
+      </div>
+      <div class="skill">
+        <img src="images/dashboard.png" alt="dashboard">
+        <p>Dashboards</p>
+      </div>
+      <div class="skill">
+        <img src="images/datastructure.png" alt="datastructure">
+        <p>Data Structures</p>
+      </div>
+      <!-- Add more as needed -->
+    </div>
+  </section>  
+
+       <!-- Languages Section -->
+  <section id="languages" class="languages-section">
+    <h2>Languages</h2>
+    <div class="language-card">
+      <h3>English</h3>
+      <p>Professional working proficiency</p>
+    </div>
+    <div class="language-card">
+      <h3>Gujarati</h3>
+      <p>Full professional proficiency</p>
+    </div>
+    <div class="language-card">
+      <h3>Hindi</h3>
+      <p>Professional working proficiency</p>
+    </div>
+    <div class="language-card">
+      <h3>Urdu</h3>
+      <p>Full professional proficiency</p>
+    </div>
+  </section>
+  
+  <!-- Projects -->
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+  
+    <div class="project">
+      <h3>Fashion E-Commerce Website</h3>
+      <p>
+        In my semester 5 project for my Engineering Information Technology program, I designed and developed a comprehensive fashion e-commerce website. The goal was to create an engaging and user-friendly platform that allows users to browse and purchase fashion items online.
+        <br><br>
+        <strong>Frontend:</strong><br>
+        HTML: Structured the content and layout of the website.<br>
+        CSS: Styled the website for a visually appealing design, ensuring a modern and responsive look.<br>
+        JavaScript: Implemented interactive features, enhancing user experience (e.g., dynamic product filtering and image sliders).<br>
+        Bootstrap: Utilized this framework to ensure the website is mobile-responsive and optimized for various devices.
+        <br><br>
+        <strong>Backend:</strong><br>
+        XAMPP: Used this local server environment to manage the database and server-side operations, facilitating easy development and testing.<br>
+        MySQL: Designed the database to store user information, product details, and order history, ensuring data integrity and security.
+        <br><br>
+        <strong>Key Features:</strong><br>
+        - User registration and login system for personalized shopping experiences.<br>
+        - Product catalog with detailed descriptions, images, and pricing.<br>
+        - Shopping cart functionality that allows users to add or remove items seamlessly.<br>
+        - Checkout process with order summary and confirmation.
+      </p>
+    </div>
+  
+    <div class="project">
+      <h3>Mock Test and Examination Management System</h3>
+      <p>
+        Developed a Mock Test and Examination Management System as a part of my second-year engineering coursework, with implementations in two consecutive semesters.
+        <br><br>
+        <strong>Semester 3 (Java & SQL):</strong> Created the system using Java for the frontend and SQL for the backend database. Implemented features for test creation, user management, and results tracking, focusing on robust database interactions and user interface functionality.
+        <br><br>
+        <strong>Semester 4 (Python & Django):</strong> Rebuilt the system using Python and the Django framework, improving upon the previous version with a more modern tech stack. Enhanced functionality included real-time feedback, advanced data analysis, and an intuitive user interface.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Resume Section -->
+<section id="resume" class="resume-section">
+  <h2>Resume</h2>
+  <p>Download my resume to learn more about my skills, academic background, and project experience in data analytics, etc. </p>
+  <a href="files/resume_arkam.docx" download class="resume-btn">Download Resume</a>
+</section>
+
+
+  <!-- Contact Me -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/sunesaraarkam05@gmail.com" method="POST" class="contact-form">
+      <!-- Honeypot to prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+  
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+  
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+  
+      <!-- Actual Form Fields -->
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  
+
+  <!-- Social Media -->
+  <footer>
+    <p>Connect with me</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/arkamsunesara" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sunesaraarkam05@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Arkam Sunesara. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

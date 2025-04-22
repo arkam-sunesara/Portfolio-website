@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates | Arkam Sunesara</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="certificates.css" />
+  <!-- AOS Library -->
+ <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Certificate Modal -->
+<div id="certModal" onclick="closeCertModal()">
+    <span>&times;</span>
+    <img id="modalCertImage" src="" alt="Full Certificate" />
+  </div>
+  
+  <header class="cert-header">
+    <h1 class="cert-title">📜 My Certificates</h1>
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </header>
+
+  <section class="cert-container">
+    
+    <div class="cert-grid">
+      
+          <!-- Certificate Card 1 -->
+          <div class="cert-card animate" onclick="openCertModal('images/PWC.jpg')">
+            <img class="cert-image" src="images/PWC.jpg" alt="Certificate Image" />
+            <p>I’m excited to share that I’ve successfully completed the Power BI Job Simulation Course! Through this journey, I’ve developed essential skills like:</p>
+                🔢 Calculating Measures & Defining KPIs 📈,
+                💡 Generating Insights and Taking Action 🎯 ,
+                📊 Building Interactive Power BI Dashboards 🛠️ ,
+                🤔 Self-Reflection for Continuous Improvement 🌱 
+                This experience has significantly enhanced my data analytics capabilities, empowering me to make data-driven decisions and create impactful dashboards.</p>
+          </div>
+           
+          <div class="cert-card animate" onclick="openCertModal('images/TATA.jpg')">
+            <img class="cert-image" src="images/TATA.jpg" alt="Certificate Image" />
+            <p>Excited to share that I have completed the "Data Visualisation: Empowering Business with Effective Insights" course! 🚀 This journey has sharpened my skills in data analysis, data cleanup, and transforming raw data into compelling, actionable insights. With expertise in charts, graphs, dashboards, and Visual Basic, I'm now equipped to communicate complex information more effectively and drive informed decision-making. Looking forward to applying these skills to deliver impactful business solutions!</p>
+          </div>
+
+          <div class="cert-card animate" onclick="openCertModal('images/Data_Analysis_by_Microsoft_and_LinkedIn.jpg')">
+            <img class="cert-image" src="images/Data_Analysis_by_Microsoft_and_LinkedIn.jpg" alt="Certificate Image" />
+            <p>I’m thrilled to announce that I have completed the Career Essentials in Data Analysis course from Microsoft and LinkedIn! This comprehensive program has provided me with a solid foundation in key areas of data analysis, including:
+
+                Data Analysis: I learned how to collect, clean, and analyze data using industry-standard tools and techniques. This involved hands-on practice with data manipulation and statistical analysis to uncover valuable insights.
+                
+                Data Visualization: I explored the principles of effective data visualization, mastering tools like Power BI and Excel to create compelling visual representations of data. This skill helps in communicating complex information clearly and effectively.
+                
+                Data Analytics: I gained a deeper understanding of analytical frameworks and methodologies, including descriptive, predictive, and prescriptive analytics.</p>
+          </div>
+
+          <div class="cert-card animate" onclick="openCertModal('images/Certificate_data_structures.jpg')">
+            <img class="cert-image" src="images/Certificate_data_structures.jpg" alt="Certificate Image" />
+            <p>I am excited to announce that I have completed the Advanced Data Structures and Algorithms in Java: Working with Graph Algorithms course from Infosys!
+
+                This course has deepened my understanding of complex data structures and algorithms, focusing on graph algorithms, which are crucial for solving real-world problems in data analysis, network optimization, etc.I’ve gained hands-on experience with implementing and optimizing various graph algorithms, enhancing my problem-solving skills in Java.
+                
+                A special thanks to Infosys for providing such a comprehensive learning experience. I’m eager to apply these advanced techniques and continue advancing my skills in software development and algorithm design.</p>
+          </div>
+           
+          <div class="cert-card animate" onclick="openCertModal('images/PHP_AND_SQL_Certificate.jpg')">
+            <img class="cert-image" src="images/PHP_AND_SQL_Certificate.jpg" alt="Certificate Image" />
+            <p>I am excited to announce that I have completed a comprehensive PHP and MySQL certification course through the Spoken Tutorial Project by IIT Bombay, held at Shah & Anchor Kutchhi Engineering College. This course provided in-depth knowledge and hands-on experience in PHP programming and MySQL database management, including data operations and dynamic web development. The training has equipped me with practical skills to create and manage web applications effectively. Looking forward to applying these new skills in future projects and professional opportunities. </p>
+          </div>
+
+          <div class="cert-card animate" onclick="openCertModal('images/python_certificate.jpg')">
+            <img class="cert-image" src="images/python_certificate.jpg" alt="Certificate Image" />
+            <p>I have completed Programming Essentials in Python course, provided bu Cisco Networking Academy in collaboration with OpenEDG Python Institute. My training includes hands-on experience with coding and problem-solving techniques essential for modern technology environments.</p>
+          </div>
+
+          <div class="cert-card animate" onclick="openCertModal('images/certificate_AIML.jpg')">
+            <img class="cert-image" src="images/certificate_AIML.jpg" alt="Certificate Image" />
+            <p>I’ve delved into AI & Machine Learning, where I explored advanced techniques and applications of machine learning algorithms to tackle real-world challenges. These experiences have significantly enriched my technical skill set and have me excited about applying these new capabilities to drive innovation and solve complex problems. I’m eager to leverage this knowledge in upcoming opportunities and projects!</p>
+          </div>
+
+          <!-- Repeat for more certificates -->
+          <!-- Just change image paths, logos, and text inside -->
+      
+        </div>
+      </section>
+      
+  
+    <!-- Add more certificates as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arkam Sunesara. All rights reserved.</p>
+  </footer>
+
+  <script src="certificates.js"></script>
+  <script>
+    function openCertModal(imageSrc) {
+      const modal = document.getElementById("certModal");
+      const img = document.getElementById("modalCertImage");
+      img.src = imageSrc;
+      modal.style.display = "flex";
+    }
+  
+    function closeCertModal() {
+      document.getElementById("certModal").style.display = "none";
+    }
+  </script>
+
+
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+   
+
+   <!-- Modal for fullscreen certificate -->
+<div id="cert-modal" class="modal">
+    <span class="close" onclick="closeCertModal()">&times;</span>
+    <img class="modal-content" id="cert-modal-img">
+  </div>
+  
+  <style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+  }
+  .close {
+    position: absolute;
+    top: 20px; right: 35px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  </style>
+  
+  <script>
+  function openCertModal(imageSrc) {
+    document.getElementById("cert-modal").style.display = "block";
+    document.getElementById("cert-modal-img").src = imageSrc;
+  }
+  function closeCertModal() {
+    document.getElementById("cert-modal").style.display = "none";
+  }
+  </script>
+  
+</body>
+</html>
